@@ -3,3 +3,6 @@ try:
 
 except ValueError:
     print("Enter your age!")
+
+else:
+    print(age)
