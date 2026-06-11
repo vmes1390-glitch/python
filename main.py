@@ -1,8 +1,10 @@
-def cal(age):
-    return f"you lived {age * 365} days"
+import sys
 
-age=int(input("Enter your age: "))
+if len(sys.argv)<2:
+    print("too few args")
 
-d=cal(age)
+elif len(sys.argv)>2:
+    print("too many args")
 
-print(d)
+else:
+    print("hello dear", sys.argv[1])
