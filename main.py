@@ -1,5 +1,4 @@
-from calculator import square
+name=input("Enter your name: ")
 
-def test_sqr():
-    assert square(2) == 4
-    assert square(-3) == 9
+with open("E:/python/names.txt", "a", newline="\n") as file:
+    file.write(name + "\n")
